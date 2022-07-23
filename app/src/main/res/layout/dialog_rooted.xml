@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_dialog_border"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/image_error"
+            android:layout_width="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/ic_error_larger"
+            android:scaleType="centerCrop"
+            android:layout_margin="@dimen/common_margin_24dp"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/text_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            tools:text="This will be content text"
+            style="@style/themeTextNormalBlackWeight400"
+            android:layout_margin="@dimen/common_margin_16dp"
+            android:textSize="@dimen/common_size_text_16sp"
+            app:layout_constraintTop_toBottomOf="@+id/image_error"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/view_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:id="@+id/view_line"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_content"
+            app:layout_constraintBottom_toTopOf="@+id/button_ok"
+            android:layout_width="0dp"
+            android:background="@color/color_bg_view_dialog"
+            android:layout_height="@dimen/view_height_1dp"/>
+
+        <Button
+            android:id="@+id/button_ok"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/common_margin_16dp"
+            android:layout_marginEnd="@dimen/common_margin_16dp"
+            android:layout_marginBottom="@dimen/common_margin_4dp"
+            app:layout_constraintTop_toBottomOf="@+id/view_line"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@android:color/transparent"
+            app:backgroundTint="@null"
+            android:textColor="@color/colorPrimaryText"
+            android:text="@string/dialog_confirm_button_ok"
+            tools:text="OK"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="image_content_description">image content description</string>
+
+    <string name="list_empty_data">No data</string>
+    <string name="dialog_common_error_try_too_much">Please check your connection before trying again.</string>
+    <string name="dialog_internet_lost_title">Internet connection has been lost.</string>
+    <string name="dialog_internet_lost_content">The internet connection is not stable.\n Please check your internet environment.</string>
+    <string name="dialog_internet_button_try">Try again</string>
+    <string name="dialog_rooted">This device has been rooted!</string>
+
+    <string name="dialog_confirm_button_cancel">Cancel</string>
+    <string name="dialog_confirm_button_ok">Confirm</string>
+
+    <string name="dialog_content_loading">please wait for a moment.</string>
+    <string name="toast_click_back_twice">Press the back button once more to close the app</string>
+
+    <string name="dialog_common_unknown_error">An error has occurred. Please try again in a few minutes</string>
+    <string name="dialog_common_error_key_time_out">Your login session has expired. Please log in again.</string>
+
+    <string name="home_content_button_search">Get Weather</string>
+    <string name="home_hint_edit_text_search">Search weather by city name…</string>
+    <string name="home_content_no_data">No data</string>
+    <string name="home_humidity_sample">Humidity\n %s%%</string>
+    <string name="home_humidity_temperature">Average temperature: %sC</string>
+    <string name="home_humidity">Humidity</string>
+
+    <string name="toast_limit_char_search">The search content length must be from 3 characters or above</string>
+</resources>

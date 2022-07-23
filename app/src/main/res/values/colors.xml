@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="color_teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="color_black">#FF000000</color>
+    <color name="color_white">#FFFFFFFF</color>
+    <color name="color_bg_splash_screen">#FFCF27</color>
+
+    <color name="colorPrimary">#FFCF27</color>
+    <color name="colorPrimarySecond">#FF018786</color>
+    <color name="colorPrimaryText">#B46FFF</color>
+
+    <color name="color_hint_dark">#CBCBCB</color>
+    <color name="color_view_dark">#DEDEDE</color>
+    <color name="color_bg_disable">#F5F4F0</color>
+
+    <!-- Color in login screen -->
+    <color name="color_bg_yellow_main">#FFCF27</color>
+    <color name="color_stroke_gray_login_screen">#CCCCCC</color>
+    <color name="color_bg_gray_confirm">#B3B3B3</color>
+    <color name="color_bg_purple_confirm">#B46FFF</color>
+
+    <!-- Color in profile screen -->
+    <color name="color_bg_link">#FFFBEF</color>
+
+    <!-- Color in settings screen -->
+    <color name="color_bg_gray_divider">#F2F2F2</color>
+    <color name="color_bg_gray_select_1">#333333</color>
+    <color name="color_bg_gray_select_2">#999999</color>
+
+    <!-- Text color in app -->
+    <color name="color_text_gray_1">#1A1A1A</color>
+    <color name="color_text_gray_2">#B3B3B3</color>
+    <color name="color_text_gray_3">#4C4C4C</color>
+    <color name="color_text_gray_4">#999999</color>
+    <color name="color_text_gray_5">#808080</color>
+    <color name="color_text_gray_6">#666666</color>
+    <color name="color_text_gray_7">#F8F8F8</color>
+    <color name="color_text_gray_8">#E9E9E9</color>
+    <color name="color_text_gray_9">#FDFDFD</color>
+    <color name="color_text_gray_10">#f1f1f1</color>
+    <color name="color_text_gray_11">#fcfcfc</color>
+    <color name="color_text_gray_12">#393939</color>
+
+    <color name="color_text_brown_1">#3C1E1E</color>
+    <color name="color_text_red">#FF4F4F</color>
+
+    <color name="color_bg_dialog_config">#99C4C4C4</color>
+    <color name="color_tool_tip">#B46FFF</color>
+    <color name="color_text_tab">#891DFF</color>
+    <color name="color_bg_sticker">#F4F4F4</color>
+    <color name="color_bg_image_select">#00A8A4</color>
+    <color name="color_bg_text_filter">#E5E5E5</color>
+    <color name="color_text_disable">#999999</color>
+
+    <!-- Color of bg dialog -->
+    <color name="color_bg_view_dialog">#E5E5E5</color>
+    <color name="color_bg_dialog_dim">#80323232</color>
+
+    <!-- Color of gradient -->
+    <color name="color_gradient_start">#B46FFF</color>
+    <color name="color_gradient_end">#FFCF27</color>
+    <color name="color_bg_sticker_gradient_start">#F4F4F4</color>
+    <color name="color_bg_sticker_gradient_end">#D7D7D7</color>
+
+    <!-- Color of button disable -->
+    <color name="color_button_disable">#B3B3B3</color>
+
+    <!-- Color of setting screen -->
+    <color name="color_text_setting">#333333</color>
+    <color name="color_text_setting_version">#808080</color>
+
+    <!-- Color of sticker select -->
+    <color name="color_sticker_select">#B46FFF</color>
+
+    <!-- Color of bg daily attendance -->
+    <color name="color_bg_daily_attendance">#F2F2F2</color>
+    <color name="color_text_sunday">#FF4F4F</color>
+    <color name="color_text_day">#999999</color>
+    <color name="color_item_day">#CCCCCC</color>
+    <color name="color_item_day_active">#B46FFF</color>
+
+    <color name="color_bg_suggest_ai">#60B3B3B3</color>
+
+    <!-- Color of text note auto delete -->
+    <color name="color_text_auto_delete">#969696</color>
+
+    <!-- Color of text note auto delete -->
+    <color name="color_bg_input_search">#F6F6F6</color>
+    <color name="color_tab_select">#FFC600</color>
+
+    <!-- Color of icon view dot -->
+    <color name="color_ic_view_image_select">#FFFFFFFF</color>
+    <color name="color_ic_view_image_un_select">#60FFFFFF</color>
+
+    <color name="color_gray_main">#d5d1c8</color>
+    <color name="color_green_main">#006340</color>
+    <color name="color_green_light_main">#e4fdf2</color>
+
+</resources>

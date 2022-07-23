@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_dialog_border"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/spinner_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/view_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/common_margin_24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/spinner_loading" />
+
+        <TextView
+            android:id="@+id/view_content"
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spinner_imageView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:gravity="center"
+            style="@style/themeTextNormalBlackWeight400"
+            android:textSize="@dimen/common_size_text_16sp"
+            android:textColor="@color/color_black"
+            android:layout_margin="@dimen/common_margin_24dp"
+            android:text="@string/dialog_content_loading"
+            tools:text="This is view text"
+            android:layout_height="wrap_content" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

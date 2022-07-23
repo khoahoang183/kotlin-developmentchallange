@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_dialog_border"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            tools:text="This will be content text"
+            style="@style/themeTextNormalBlackWeight400"
+            android:textColor="@color/color_black"
+            android:layout_margin="@dimen/common_margin_32dp"
+            android:textSize="@dimen/common_size_text_16sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/view_line"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:id="@+id/view_line"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_content"
+            app:layout_constraintBottom_toTopOf="@+id/group_button"
+            android:layout_width="0dp"
+            android:background="@color/color_bg_view_dialog"
+            android:layout_height="@dimen/view_height_1dp"/>
+
+        <LinearLayout
+            android:id="@+id/group_button"
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/view_line"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="@dimen/common_margin_16dp"
+            android:layout_marginEnd="@dimen/common_margin_16dp"
+            android:padding="@dimen/common_padding_4dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_ok"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@android:color/transparent"
+                app:backgroundTint="@null"
+                android:textColor="@color/colorPrimaryText"
+                android:text="@string/dialog_confirm_button_ok"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:id="@+id/view_center_button"
+                android:layout_width="@dimen/view_height_1dp"
+                android:layout_marginEnd="@dimen/common_margin_4dp"
+                android:layout_marginStart="@dimen/common_margin_4dp"
+                android:background="@color/color_bg_view_dialog"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/button_cancel"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/color_black"
+                app:backgroundTint="@null"
+                android:text="@string/dialog_confirm_button_cancel"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

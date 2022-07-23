@@ -1,0 +1,354 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.DevelopmentChallenge" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/color_green_main</item>
+        <item name="colorPrimaryVariant">@color/color_green_main</item>
+        <item name="colorOnPrimary">@color/color_white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/color_teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/color_black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/color_green_main</item>
+
+        <item name="android:editTextStyle">@style/themeInput14NormalDark</item>
+        <item name="android:textViewStyle">@style/themeTextNormalBlackWeight500</item>
+        <item name="materialButtonStyle">@style/materialButtonStyle</item>
+        <item name="buttonStyle">@style/themeButtonCommon</item>
+
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/common_size_text_14sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/montserrat_alternates_medium</item>
+        <item name="android:datePickerStyle">@style/datePicker</item>
+    </style>
+
+
+    <!-- style of input text view dark 14 -->
+    <style name="themeInput14NormalDark">
+        <item name="android:background">@drawable/state_input_text</item>
+        <item name="android:paddingStart">@dimen/common_padding_14dp</item>
+        <item name="android:paddingEnd">@dimen/common_padding_14dp</item>
+        <item name="android:paddingTop">@dimen/common_padding_16dp</item>
+        <item name="android:paddingBottom">@dimen/common_padding_16dp</item>
+        <item name="android:textSize">@dimen/common_size_text_14sp</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="hintTextColor">@color/color_hint_dark</item>
+        <item name="android:textColorHint">@color/color_hint_dark</item>
+        <item name="android:fontFamily">@font/montserrat_alternates_medium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+        <item name="android:fontWeight" tools:targetApi="o">400</item>
+        <item name="fontWeight">400</item>
+    </style>
+
+    <!-- style of dialog picker date -->
+    <style name="datePicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <!-- style of dialog -->
+    <style name="customDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="windowMinWidthMajor">0dp</item>
+        <item name="windowMinWidthMinor">0dp</item>
+    </style>
+
+    <!-- style full screen of dialog -->
+    <style name="fullScreenDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- style of dialog fullscreen -->
+    <style name="customDialogFullScreenTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- Style of button -->
+    <style name="materialButtonStyle" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="colorPrimary">@color/colorPrimary</item>
+    </style>
+
+    <!-- style of button dark -->
+    <style name="themeButtonCommon" parent="Widget.MaterialComponents.Button">
+        <item name="android:textSize">@dimen/common_size_text_14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/montserrat_alternates_medium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="backgroundTint">@null</item>
+    </style>
+
+    <!-- Bottom sheet style -->
+    <style name="customBottomSheetDialogTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/customBottomSheetStyle</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="colorPrimary">@color/color_white</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize|stateHidden</item>
+    </style>
+
+    <!-- Bottom sheet style child -->
+    <style name="customBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- style of text view dark normal Weight 1000-->
+    <style name="themeTextNormalBlackWeight1000">
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textSize">@dimen/common_size_text_14sp</item>
+        <item name="android:fontFamily">@font/montserrat_alternates_medium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">@font/montserrat_alternates_medium</item>
+        <item name="android:textFontWeight" tools:targetApi="p">1000</item>
+        <item name="android:fontWeight" tools:targetApi="o">1000</item>
+        <item name="fontWeight">800</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:insetTop">@dimen/common_padding_0dp</item>
+        <item name="android:insetBottom">@dimen/common_padding_0dp</item>
+    </style>
+
+    <!-- style of text view dark normal Weight 800-->
+    <style name="themeTextNormalBlackWeight800">
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textSize">@dimen/common_size_text_14sp</item>
+        <item name="android:fontFamily">@font/montserrat_alternates_medium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">@font/montserrat_alternates_medium</item>
+        <item name="android:textFontWeight" tools:targetApi="p">800</item>
+        <item name="android:fontWeight" tools:targetApi="o">800</item>
+        <item name="fontWeight">800</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:insetTop">@dimen/common_padding_0dp</item>
+        <item name="android:insetBottom">@dimen/common_padding_0dp</item>
+    </style>
+
+    <!-- style of text view dark normal Weight 600-->
+    <style name="themeTextNormalBlackWeight600">
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textSize">@dimen/common_size_text_14sp</item>
+        <item name="android:fontFamily">@font/montserrat_alternates_medium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">@font/montserrat_alternates_medium</item>
+        <item name="android:textFontWeight" tools:targetApi="p">600</item>
+        <item name="android:fontWeight" tools:targetApi="o">600</item>
+        <item name="fontWeight">800</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:insetTop">@dimen/common_padding_0dp</item>
+        <item name="android:insetBottom">@dimen/common_padding_0dp</item>
+    </style>
+
+    <!-- style of text view black normal Weight 700-->
+    <style name="themeTextNormalBlackWeight700">
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textSize">@dimen/common_size_text_14sp</item>
+        <item name="android:fontFamily">@font/montserrat_alternates_medium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">@font/montserrat_alternates_medium</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+        <item name="android:fontWeight" tools:targetApi="o">700</item>
+        <item name="fontWeight">700</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:insetTop">@dimen/common_padding_0dp</item>
+        <item name="android:insetBottom">@dimen/common_padding_0dp</item>
+    </style>
+
+    <!-- style of text view black normal Weight 500-->
+    <style name="themeTextNormalBlackWeight500">
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textSize">@dimen/common_size_text_14sp</item>
+        <item name="android:fontFamily">@font/montserrat_alternates_medium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">@font/montserrat_alternates_medium</item>
+        <item name="android:textFontWeight" tools:targetApi="p">500</item>
+        <item name="android:fontWeight" tools:targetApi="o">500</item>
+        <item name="fontWeight">500</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:insetTop">@dimen/common_padding_0dp</item>
+        <item name="android:insetBottom">@dimen/common_padding_0dp</item>
+    </style>
+
+    <!-- style of text view black normal Weight 500-->
+    <style name="themeTextNormalBlackWeight500Splash">
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textSize">@dimen/common_size_text_14sp</item>
+        <item name="android:fontFamily">@font/montserrat_alternates_light</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">@font/montserrat_alternates_light</item>
+        <item name="android:textFontWeight" tools:targetApi="p">500</item>
+        <item name="android:fontWeight" tools:targetApi="o">500</item>
+        <item name="fontWeight">500</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:insetTop">@dimen/common_padding_0dp</item>
+        <item name="android:insetBottom">@dimen/common_padding_0dp</item>
+    </style>
+
+    <!-- style of text view black normal Weight 400-->
+    <style name="themeTextNormalBlackWeight400">
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textSize">@dimen/common_size_text_14sp</item>
+        <item name="android:fontFamily">@font/montserrat_alternates_medium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">@font/montserrat_alternates_medium</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+        <item name="android:fontWeight" tools:targetApi="o">400</item>
+        <item name="fontWeight">400</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:insetTop">@dimen/common_padding_0dp</item>
+        <item name="android:insetBottom">@dimen/common_padding_0dp</item>
+    </style>
+
+    <!-- style of text view black normal Weight 800 for daily attendance -->
+    <style name="themeTextDailyAttendanceWeight800">
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textSize">@dimen/common_size_text_14sp</item>
+        <item name="android:fontFamily">@font/montserrat_alternates_bold</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">@font/montserrat_alternates_bold</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+        <item name="android:fontWeight" tools:targetApi="o">700</item>
+        <item name="fontWeight">700</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:insetTop">@dimen/common_padding_0dp</item>
+        <item name="android:insetBottom">@dimen/common_padding_0dp</item>
+    </style>
+
+    <!-- style of text view black normal for daily attendance -->
+    <style name="themeTextDailyAttendance">
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textSize">@dimen/common_size_text_14sp</item>
+        <item name="android:fontFamily">@font/montserrat_alternates_bold</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">@font/montserrat_alternates_bold</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:insetTop">@dimen/common_padding_0dp</item>
+        <item name="android:insetBottom">@dimen/common_padding_0dp</item>
+    </style>
+
+    <!-- style of button dark -->
+    <style name="themeImageButtonCommon" parent="Widget.MaterialComponents.TimePicker.ImageButton">
+        <item name="android:textSize">@dimen/common_size_text_14sp</item>
+        <item name="fontFamily">@font/montserrat_alternates_medium</item>
+        <item name="android:gravity">center</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- style of button dark -->
+    <style name="themeButtonText" parent="Widget.MaterialComponents.Button">
+        <item name="android:textSize">@dimen/common_size_text_14sp</item>
+        <item name="fontFamily">@font/montserrat_alternates_medium</item>
+        <item name="android:gravity">center</item>
+        <item name="backgroundTint">@null</item>
+        <item name="minWidth">0dp</item>
+        <item name="minHeight">0dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- style corner of image view -->
+    <style name="roundedCorners" parent="">
+        <item name="shapeAppearance">@style/detailRoundCorners</item>
+    </style>
+
+    <style name="detailRoundCorners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">15%</item>
+    </style>
+
+    <!-- style corner of image view -->
+    <style name="rounded10PercentCorners" parent="">
+        <item name="shapeAppearance">@style/detail10PercentRoundCorners</item>
+    </style>
+
+    <style name="detail10PercentRoundCorners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10%</item>
+    </style>
+
+    <!-- style corner top left right of image view -->
+    <style name="roundedLeftRightTopCorners" parent="">
+        <item name="shapeAppearance">@style/detailRoundTopLeftRightCorners</item>
+    </style>
+
+    <style name="detailRoundTopLeftRightCorners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">15%</item>
+        <item name="cornerSizeTopRight">15%</item>
+    </style>
+
+    <!-- style for splash screen -->
+    <style name="removeSplashScreenTheme" parent="@style/Theme.DevelopmentChallenge">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowSplashScreenAnimationDuration" tools:targetApi="s">0</item>
+    </style>
+
+    <!-- style of tab layout -->
+    <style name="tabLayoutTextStyle">
+        <item name="android:textSize">@dimen/common_size_text_14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textFontWeight" tools:targetApi="p">700</item>
+        <item name="android:fontWeight" tools:targetApi="o">700</item>
+        <item name="fontWeight">700</item>
+        <item name="android:fontFamily">@font/montserrat_alternates_medium</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!-- style of Transparent SeekBar -->
+    <style name="seekBarTransparentStyle" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressBackgroundTint">@android:color/transparent</item>
+        <item name="android:progressTint">@android:color/transparent</item>
+        <item name="android:thumbTint">@android:color/transparent</item>
+    </style>
+
+    <style name="seekBarStyle" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressBackgroundTint">@color/color_gray_main</item>
+        <item name="android:progressTint">@color/color_green_main</item>
+        <item name="android:thumbTint">@color/color_green_main</item>
+    </style>
+</resources>
