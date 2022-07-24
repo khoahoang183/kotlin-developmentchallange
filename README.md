@@ -89,7 +89,7 @@ The libraries have already been added:
 * Constrain layout: 2.1.3
 * Lifecycle data: 2.4.1
 * Timber: 5.0.1
-* Koin: 3.1.5
+* Koin: '.2.0-beta-1
 * Rxjava3: 3.1.3
 * Retrofit2: 2.9.0
 * Okhttp: 5.0.0-alpha.4

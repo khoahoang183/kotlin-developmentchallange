@@ -94,7 +94,6 @@ dependencies {
 
     // Injection
     def koin_version = '3.2.0-beta-1'
-    def koin_test_version = '2.0.1'
 
     // Rx java
     def rx3_android_version = "3.0.0"
