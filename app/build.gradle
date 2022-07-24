@@ -23,6 +23,14 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            ndk {
+                abiFilters 'arm64-v8a', 'armeabi-v7a', 'x86_64'
+            }
+        }
+        debug {
+            ndk {
+                abiFilters 'arm64-v8a'
+            }
         }
     }
     compileOptions {
@@ -51,11 +59,14 @@ android {
             buildConfigField "String", "BASE_URL", "\"https://api.openweathermap.org/\""
         }
         production {
+            versionCode = 1
+            versionName "1.0"
             dimension "version"
             resValue "string", "app_name", "DevChallenge"
             buildConfigField "String", "BASE_URL", "\"https://api.openweathermap.org/\""
         }
     }
+
 }
 
 dependencies {
@@ -83,6 +94,7 @@ dependencies {
 
     // Injection
     def koin_version = '3.2.0-beta-1'
+    def koin_test_version = '2.0.1'
 
     // Rx java
     def rx3_android_version = "3.0.0"
@@ -124,6 +136,13 @@ dependencies {
 
     // Koin android
     implementation "io.insert-koin:koin-android:$koin_version"
+    implementation "io.insert-koin:koin-androidx-navigation:$koin_version"
+    implementation "io.insert-koin:koin-androidx-compose:$koin_version"
+
+    // Koin testing tools
+    testImplementation "io.insert-koin:koin-test:$koin_version"
+    // Needed JUnit version
+    testImplementation "io.insert-koin:koin-test-junit4:$koin_version"
 
     // RxJava
     implementation "io.reactivex.rxjava3:rxandroid:$rx3_android_version"
@@ -138,7 +157,7 @@ dependencies {
 
     // Room
     implementation "androidx.room:room-runtime:$room_version"
-    kapt  "androidx.room:room-compiler:$room_compiler_version"
+    kapt "androidx.room:room-compiler:$room_compiler_version"
     implementation("androidx.room:room-rxjava3:$room_version")
 
     // Reviewer

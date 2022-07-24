@@ -1,7 +1,8 @@
 package com.android.developmentchallenge.app
 
 import android.app.Application
-import androidx.databinding.library.BuildConfig
+import com.android.developmentchallenge.BuildConfig
+import com.android.developmentchallenge.BuildConfig.BASE_URL
 import com.android.developmentchallenge.di.apiModule
 import com.android.developmentchallenge.di.databaseModule
 import com.android.developmentchallenge.di.singletonModule
@@ -55,7 +56,7 @@ class DevChallengeApplication : Application() {
         ApiRest.updateAdditionalHeaders(mapOf("Content-Type" to "application/json"))
 
         // Need config base url first
-        ApiRest.updateAPIBaseURL("https://api.openweathermap.org/")
+        ApiRest.updateAPIBaseURL(BuildConfig.BASE_URL)
 
     }
 

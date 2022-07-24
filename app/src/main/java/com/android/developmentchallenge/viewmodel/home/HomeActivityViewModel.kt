@@ -1,5 +1,6 @@
 package com.android.developmentchallenge.viewmodel.home
 
+import androidx.compose.runtime.Composable
 import androidx.lifecycle.MutableLiveData
 import com.android.developmentchallenge.R
 import com.android.developmentchallenge.base.viewmodel.BaseViewModel
@@ -7,6 +8,7 @@ import com.android.developmentchallenge.model.DailyForecastModel
 import com.android.developmentchallenge.network.response.ErrorResponse
 import com.android.developmentchallenge.network.service.WeatherService
 import com.android.developmentchallenge.util.adapter.home.AdapterHomeForecast
+import io.reactivex.rxjava3.core.Observable
 
 /**
  * Created by: Khoa Hoang Dang (Steve) - HK Studio
@@ -25,6 +27,7 @@ class HomeActivityViewModel(private val weatherService: WeatherService) : BaseVi
     var lastStateSearch: String = ""
 
     fun getDailyForecast(cityName: String) {
+
         callApiMainThreadWithDialog<DailyForecastModel>(
             weatherService.getDailyForecast(
                 cityName = cityName
